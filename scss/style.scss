@@ -1,0 +1,16 @@
+@import "_reset-style.scss";
+@import "_variables.scss";
+@import "_header.scss";
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: 1110px;
+    box-sizing: content-box;
+    margin: 0px auto;
+   /*  padding: 0 30px; */
+}
