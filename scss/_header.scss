@@ -40,10 +40,61 @@
                     font-family: inherit;
                     font-size: inherit;
                 }
-
             }
         }
      }
+   
+    .menu {
+        background: #0F0F0F;
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: -10px;
+            &__header {
+                @include logo(36px)
+            }
+        }
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            
+            
+        }
+        &__list {
+            display: flex;
+        }
+        &__link {
+            display: inline-block;
+            padding: 31px 18px 31px 20px; 
+            font-family: 'PT Sans';
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $grey;
+            min-height: 100%;
+            &:last-child {
+                padding: 31px 32px 31px 20px; 
+            }
+            &:hover {
+                background-color: #1F1F1F;
+                color: $white;
+            }
+
+        }
+
+        &__icon {
+            & :first-child {
+            margin-right: 40px;
+            }
+            cursor: pointer;
+        }
+        &__container {
+            display: flex;
+            justify-content:space-between;  
+        }
+    }
+    
 }
 
 ._container {

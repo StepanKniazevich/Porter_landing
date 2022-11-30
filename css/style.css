@@ -108,6 +108,57 @@ input::-ms-clear {
   font-family: inherit;
   font-size: inherit;
 }
+.header .menu {
+  background: #0F0F0F;
+}
+.header .menu .logo {
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+}
+.header .menu .logo__header {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+.header .menu__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .menu__list {
+  display: flex;
+}
+.header .menu__link {
+  display: inline-block;
+  padding: 31px 18px 31px 20px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #969696;
+  min-height: 100%;
+}
+.header .menu__link:last-child {
+  padding: 31px 32px 31px 20px;
+}
+.header .menu__link:hover {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+.header .menu__icon {
+  cursor: pointer;
+}
+.header .menu__icon :first-child {
+  margin-right: 40px;
+}
+.header .menu__container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .wrapper {
   min-height: 100%;
