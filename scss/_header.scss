@@ -1,10 +1,8 @@
 .header {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 50;
     font-family: 'PT Sans';
+    &__popup {
+        display:none;
+    }
     &__container {
         display: flex;
         flex-direction: column;
@@ -15,12 +13,16 @@
         &__container {
              display:flex;
              justify-content:space-between;
+             flex-wrap: wrap;
              padding:14px 0px 14px 0px;
              color: $grey;
-        }
+             @media (max-width:1050px) {
+                justify-content:space-around;
+             }
+        } 
         &__contact {
             display:flex;
-       }
+        }
         &__description {
             font-weight: 400;
             font-size: 12px;
@@ -35,31 +37,50 @@
         }
         &__login {
             .login {
+                &__img {
+                    opacity: 0.5;
+                    margin-right: 20px;
+                    transition: all 0.6s ease-in-out;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
                 &__url {
                     color:inherit;
                     font-family: inherit;
                     font-size: inherit;
+                    span:hover {
+                        transition: all 0.3s ease-in-out;
+                        text-decoration:underline;
+                        color:$white;
+                    }
                 }
             }
         }
      }
    
     .menu {
+        #hamb {
+            display: none;
+        }
         background: #0F0F0F;
+        &__popup {
+            display:none;
+        }
         .logo {
             display: flex;
             align-items: center;
             margin-left: -10px;
             &__header {
-                @include logo(36px)
+                @include logo(36px);
+                
             }
         }
         &__content {
             display: flex;
             align-items: center;
             justify-content:center;
-            
-            
+            flex-wrap: wrap;
         }
         &__list {
             display: flex;
@@ -77,6 +98,7 @@
                 padding: 31px 32px 31px 20px; 
             }
             &:hover {
+                transition: all 0.2s ease-in-out;
                 background-color: #1F1F1F;
                 color: $white;
             }
@@ -92,46 +114,9 @@
         &__container {
             display: flex;
             justify-content:space-between;  
+            flex-wrap: wrap;
         }
-    }
-    
-}
-
-._container {
-}
-.subHeader {
-}
-.subHeader__container {
-}
-.subHeader__contact {
-}
-.subHeader{
+    } 
 }
 
 
-.login {
-}
-.login__url {
-}
-.login__img {
-}
-.header__menu {
-}
-.menu {
-}
-.menu__logo {
-}
-.logo {
-}
-.logo__header {
-}
-.menu__list {
-}
-.menu__item {
-}
-.menu__link {
-}
-.menu__icons {
-}
-.menu__icon {
-}

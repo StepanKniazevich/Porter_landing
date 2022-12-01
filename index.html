@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
-    <title>Porter</title>
+    <title>Porten</title>
 </head>
 
 <body>
@@ -31,27 +31,25 @@
                         <div class="subHeader__login login">
                             <a href="#" class="login__url">
                                 <img src="./img/header/ic_sharp-log-in.png" alt="ic_sharp-log-in" class="login__img">
-                                Вхід / Реєстрація
+                                <span>Вхід</span> / <span>Реєстрація</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="header__menu menu">
                     <div class="menu__container _container">
+                        <div class="menu__hamb" id = "hamb">
+                            <div class="hamb__wrapper">
+                            </div>
+                        </div>
                         <div class="menu__logo logo">
                              <h2 class="logo__header">PORTEN</h2>
                         </div>
                         <div class="menu__content">
                              <div class="menu__list">
-                                 
-                                      <a href="#" class="menu__link">сподобалось</a> 
-                                 
-                               
-                                     <a href="#" class="menu__link">Особистий кабінет</a>
-                                 
-                               
-                                     <a href="#" class="menu__link">налаштування</a>
-                                 
+                                 <a href="#" class="menu__link">сподобалось</a> 
+                                 <a href="#" class="menu__link">Особистий кабінет</a>
+                                 <a href="#" class="menu__link">налаштування</a>   
                              </div>
                             <div class="menu__icon">
                                 <img src="./img/header/bx_bx-cart.png" alt="ic_sharp-log-in"> 
@@ -61,15 +59,36 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
+                <div class="header__popup" id="popup"></div> 
+            </div>     
         </header>
-        <main>
+        <main class="main">
+            <section class="portenTitle">
+                <div class="portenTitle__container _container">
+                    <div class="portenTitle__title title itemTitle">
+                        <div class="title__container">
+                            <div class="portenTitle__logo"> 
+                                <h1>PORTEN</h1>
+                            </div>
+                            <p>івано-франківськ</p>
+                        </div>    
+                    </div>
+                    <div class="portenTitle__describe itemTitle">
+                        В магазинах Торговельній мережі Porten ви можете купити годинник у Бахмуті, Вінниці, Дніпрі,
+                        Житомирі, Запоріжжі, Івано-Франківську, Києві, Краматорську, Луцьку, Львові, Одесі, Покровську,
+                        Полтаві, Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому, Черкасах, 
+                        Чернівцях, Чернігові , а також багатьох інших містах України
+                    </div>
+                </div>
+            </section>
 
         </main>
         <footer>
-
         </footer>
     </div>
-    
 </body>
+
+<!--  JavaScript -->
+    <script src="js/script.js"></script>
 </html>
