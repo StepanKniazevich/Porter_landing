@@ -1,10 +1,10 @@
-/*------------portenTitle-styles---------------*/
+/*------------portenTitleSection-styles---------------*/
 
 .portenTitle {
     font-family: 'PT Sans';
     padding-top: 18%;
     min-height: 810px;
-    background: url('../img/main/PortenDescribe/bg.png') center center/cover no-repeat;
+    background: url('../img/main/PortenDescribe/bg.png')  center/cover no-repeat;
     &__container {
         .itemTitle:not(:last-child) {
              margin-bottom: 9.87%;

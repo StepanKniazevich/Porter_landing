@@ -216,6 +216,9 @@ input::-ms-clear {
   .header .menu__list {
     display: none;
   }
+  .header .menu__link {
+    font-size: 4px;
+  }
   .header .menu .logo {
     display: flex;
     align-items: center;
@@ -244,7 +247,7 @@ input::-ms-clear {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #fdfdfd;
+    background-color: #585858;
     z-index: 100;
     display: block;
     transition: all 0.3s ease;
@@ -272,6 +275,9 @@ input::-ms-clear {
     padding: 0px;
     margin: 0px;
   }
+  .header__popup {
+    top: 10px;
+  }
   .header .hamb__wrapper {
     transform: scale(0.4);
   }
@@ -291,6 +297,15 @@ input::-ms-clear {
     background-color: rgb(10, 10, 10);
     width: 100%;
   }
+  .header .menu__link {
+    padding: 10px;
+  }
+  .header .menu__link:last-child {
+    padding: 10px;
+  }
+  .header .menu__icon :first-child {
+    margin-right: 0px;
+  }
   .header .menu__icon img {
     transform: scale(0.4);
   }
@@ -303,12 +318,12 @@ input::-ms-clear {
     color: #FFFFFF;
   }
 }
-/*------------portenTitle-styles---------------*/
+/*------------portenTitleSection-styles---------------*/
 .portenTitle {
   font-family: "PT Sans";
   padding-top: 18%;
   min-height: 810px;
-  background: url("../img/main/PortenDescribe/bg.png") center center/cover no-repeat;
+  background: url("../img/main/PortenDescribe/bg.png") center/cover no-repeat;
 }
 .portenTitle__container .itemTitle:not(:last-child) {
   margin-bottom: 9.87%;
@@ -354,6 +369,68 @@ input::-ms-clear {
   color: #FFFFFF;
 }
 
+@media (max-width: 675px) {
+  .portenTitle__title p {
+    font-size: 12px;
+  }
+  .portenTitle__logo {
+    font-family: "Post No Bills Jaffna";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 54px;
+    color: #FFFFFF;
+  }
+  .portenTitle__describe {
+    max-width: 65.76%;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 375px) {
+  .portenTitle {
+    min-height: 0px;
+    max-height: 500px;
+    padding-top: 0px;
+  }
+  .portenTitle__container .itemTitle:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .portenTitle__title {
+    border: none;
+  }
+  .portenTitle__title .title {
+    padding: 0px;
+  }
+  .portenTitle__title .title__container {
+    padding: 0px;
+  }
+  .portenTitle__title p {
+    margin-top: -32px;
+    font-size: 6px;
+  }
+  .portenTitle__logo {
+    font-family: "Post No Bills Jaffna";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 54px;
+    color: #FFFFFF;
+    border: 0px;
+    text-decoration: underline 1px;
+  }
+  .portenTitle__describe {
+    max-width: 100%;
+    font-size: 8px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
