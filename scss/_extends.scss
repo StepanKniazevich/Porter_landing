@@ -1,0 +1,37 @@
+%underline-title {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    h2 {
+        margin-bottom: 30px;
+        //border-width: 2px 4px;  
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+    }
+    div {
+        border-bottom: 1px solid #FFFFFF ;
+        width:120px;
+        margin-bottom: 30px;
+    }
+}
+%porter-btn {
+    transition: all 0.5s ease-out;
+    background: transparent;
+    padding: 12px 28px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    color:$white;
+    &:hover {
+        background-color: rgba(0,0,0,0.7)
+    }
+}
