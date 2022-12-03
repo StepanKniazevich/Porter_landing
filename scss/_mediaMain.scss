@@ -262,3 +262,76 @@
         }
     }
 }
+
+/*--------newClocks---------*/
+
+@media (max-width:375px) {
+    .newClocks {
+        background: #000000;
+        padding-top:4.9%;
+        min-height: 400px;
+
+        &__title {
+            @extend %underline-title; 
+            margin-bottom: 2.2%;
+            padding: 0;
+            margin-bottom:0;
+            h2 {
+                font-size: 12px;
+                padding: 0;
+                margin-bottom:0;
+            }
+        }
+        &__clocksItems {
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+        &__clockItem {
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            position: relative;
+            &:last-child {
+                img {
+                    filter: blur(3px);
+                }
+            }
+            .clockItem {
+                &__imgWrapper {
+                    padding: 20% 22% 15% 10%;
+                    min-width: 82%;
+                    max-width: 100%;
+                    img {
+                        max-width:50px;
+                        max-height:80px;
+                    }
+                }
+                &__content {
+                    margin-top:0px;
+                    font-size: 4px;
+                    p:not(:last-child){
+                        margin-bottom: -20px;
+                    }
+                                
+                }
+                &__btn {
+                    right: 0;
+                    z-index: 20;
+                    filter: blur(0px);
+                    &:active {
+                        &~img {
+                            filter: blur(0px);
+                        }
+                        display: none;
+                        
+                    }
+                    padding: 1px 4px;
+                    font-size: 5px;
+                
+
+                }
+            }
+        }
+    }
+}

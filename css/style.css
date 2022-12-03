@@ -581,6 +581,12 @@ input::-ms-clear {
   z-index: 20;
   filter: blur(0px);
 }
+.newClocks__clockItem .clockItem__btn:active {
+  display: none;
+}
+.newClocks__clockItem .clockItem__btn:active ~ img {
+  filter: blur(0px);
+}
 
 /*--------portenSection-------*/
 @media (max-width: 675px) {
@@ -783,6 +789,67 @@ input::-ms-clear {
     font-size: 8px;
     padding: 3px 7px;
     margin-bottom: 20px;
+  }
+}
+/*--------newClocks---------*/
+@media (max-width: 375px) {
+  .newClocks {
+    background: #000000;
+    padding-top: 4.9%;
+    min-height: 400px;
+  }
+  .newClocks__title {
+    margin-bottom: 2.2%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .newClocks__title h2 {
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .newClocks__clocksItems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .newClocks__clockItem {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .newClocks__clockItem:last-child img {
+    filter: blur(3px);
+  }
+  .newClocks__clockItem .clockItem__imgWrapper {
+    padding: 20% 22% 15% 10%;
+    min-width: 82%;
+    max-width: 100%;
+  }
+  .newClocks__clockItem .clockItem__imgWrapper img {
+    max-width: 50px;
+    max-height: 80px;
+  }
+  .newClocks__clockItem .clockItem__content {
+    margin-top: 0px;
+    font-size: 4px;
+  }
+  .newClocks__clockItem .clockItem__content p:not(:last-child) {
+    margin-bottom: -20px;
+  }
+  .newClocks__clockItem .clockItem__btn {
+    right: 0;
+    z-index: 20;
+    filter: blur(0px);
+    padding: 1px 4px;
+    font-size: 5px;
+  }
+  .newClocks__clockItem .clockItem__btn:active {
+    display: none;
+  }
+  .newClocks__clockItem .clockItem__btn:active ~ img {
+    filter: blur(0px);
   }
 }
 .wrapper {

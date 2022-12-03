@@ -181,9 +181,6 @@
         @extend %underline-title; 
         margin-bottom: 7.2%;
     }
-    &__clocksWrapper {
-        
-    }
     &__clocksItems {
         display: flex;
         justify-content:center;
@@ -211,38 +208,23 @@
                             
             }
             &__btn {
+                
                 @extend %porter-btn;
                 position:absolute;
                 top:30%;
                 right: 7.5%;
                 z-index: 20;
                 filter: blur(0px);
+                &:active {
+                    &~img {
+                        filter: blur(0px);
+                    }
+                    display: none;
+                    
+                }
             }
         }
             
 
         }
     }
-
-.newClocks__container {
-}
-._container {
-}
-
-.newClocks__clocksWrapper {
-}
-.newClocks__clocksItems {
-}
-.newClocks__clockItem {
-}
-.clockItem {
-}
-.clockItem__imgWrapper {
-}
-.clockItem__img {
-}
-.clockItem__content {
-}
-
-
-
