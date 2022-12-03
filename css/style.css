@@ -65,13 +65,13 @@ input::-ms-clear {
   display: none;
 }
 
-.oldColection__title, .newSeason__newColection .newColection__title, .newSeason__season22 .season22__title {
+.newClocks__title, .oldColection__title, .newSeason__newColection .newColection__title, .newSeason__season22 .season22__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.oldColection__title h2, .newSeason__newColection .newColection__title h2, .newSeason__season22 .season22__title h2 {
+.newClocks__title h2, .oldColection__title h2, .newSeason__newColection .newColection__title h2, .newSeason__season22 .season22__title h2 {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
@@ -81,13 +81,13 @@ input::-ms-clear {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.oldColection__title div, .newSeason__newColection .newColection__title div, .newSeason__season22 .season22__title div {
+.newClocks__title div, .oldColection__title div, .newSeason__newColection .newColection__title div, .newSeason__season22 .season22__title div {
   border-bottom: 1px solid #FFFFFF;
   width: 120px;
   margin-bottom: 30px;
 }
 
-.oldColection__btn, .newSeason__newColection .newColection__btn {
+.newClocks__clockItem .clockItem__btn, .oldColection__btn, .newSeason__newColection .newColection__btn {
   transition: all 0.5s ease-out;
   background: transparent;
   padding: 12px 28px;
@@ -99,8 +99,46 @@ input::-ms-clear {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
 }
-.oldColection__btn:hover, .newSeason__newColection .newColection__btn:hover {
+.newClocks__clockItem .clockItem__btn:hover, .oldColection__btn:hover, .newSeason__newColection .newColection__btn:hover {
   background-color: rgba(2, 2, 2, 0.7);
+  filter: blur(0px);
+}
+
+.newClocks__clockItem .clockItem__imgWrapper, .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper {
+  padding: 20% 10% 15% 10%;
+  min-width: 42%;
+  max-width: 60%;
+  background-color: rgb(34, 34, 34);
+  cursor: grab;
+}
+.newClocks__clockItem .clockItem__imgWrapper img, .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper img {
+  max-width: 92%;
+  max-height: 36%;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.newClocks__clockItem .clockItem__imgWrapper img:hover, .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper img:hover {
+  opacity: 1;
+}
+
+.newClocks__clockItem .clockItem__content, .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__content {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #D0D0D0;
+  cursor: pointer;
+}
+.newClocks__clockItem .clockItem__content p:not(:last-child), .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__content p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.newClocks__clockItem .clockItem__content:hover, .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__content:hover {
+  text-decoration: underline;
+}
+@media (max-width: 826px) {
+  .newClocks__clockItem .clockItem__content, .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__content {
+    font-size: 14px;
+  }
 }
 
 .header {
@@ -451,38 +489,6 @@ input::-ms-clear {
 .newSeason__season22 .season22__title div, .newSeason__season22 .season22__title h2 {
   margin-bottom: 50px;
 }
-.newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper {
-  padding: 20% 10% 15% 10%;
-  min-width: 42%;
-  max-width: 60%;
-  background-color: rgb(34, 34, 34);
-  cursor: grab;
-}
-.newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper img {
-  max-width: 92%;
-  max-height: 36%;
-  cursor: pointer;
-  opacity: 0.6;
-}
-.newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper img:hover {
-  opacity: 1;
-}
-.newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__content {
-  margin-top: 25px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__content:hover {
-  text-decoration: underline;
-}
-@media (max-width: 826px) {
-  .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__content {
-    font-size: 14px;
-  }
-}
 .newSeason__newColection {
   min-width: 100%;
   padding-top: 22%;
@@ -538,6 +544,42 @@ input::-ms-clear {
 .oldColection__btn {
   margin-top: 80px;
   margin-bottom: 6%;
+}
+
+/*--------newClocks--------*/
+.newClocks {
+  background: #000000;
+  padding-top: 10.9%;
+  min-height: 1100px;
+}
+.newClocks__title {
+  margin-bottom: 7.2%;
+}
+.newClocks__clocksItems {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.newClocks__clockItem {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.newClocks__clockItem:last-child img {
+  filter: blur(3px);
+}
+.newClocks__clockItem .clockItem__imgWrapper {
+  padding: 20% 10% 15% 10%;
+  min-width: 82%;
+  max-width: 100%;
+}
+.newClocks__clockItem .clockItem__btn {
+  position: absolute;
+  top: 30%;
+  right: 7.5%;
+  z-index: 20;
+  filter: blur(0px);
 }
 
 /*--------portenSection-------*/

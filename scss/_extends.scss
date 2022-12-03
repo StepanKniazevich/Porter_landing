@@ -32,6 +32,41 @@
     border: 1px solid #FFFFFF;
     color:$white;
     &:hover {
-        background-color: rgba(2, 2, 2, 0.7)
+        background-color: rgba(2, 2, 2, 0.7);
+        filter: blur(0px);
+    }
+}
+%imgClock-styles {
+    padding: 20% 10% 15% 10%;
+    min-width: 42%;
+    max-width: 60%;
+    background-color: rgb(34, 34, 34);
+    cursor: grab;
+    img {
+        max-width:92%;
+        max-height:36%;
+        cursor: pointer;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        } 
+    }
+}
+%contentClock-styles {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D0D0D0; 
+    cursor: pointer;
+    p:not(:last-child) {
+        margin-bottom: 10px;
+
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+    @media (max-width:826px) {
+        font-size: 14px;
     }
 }
