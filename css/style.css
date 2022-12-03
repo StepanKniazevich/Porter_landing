@@ -100,7 +100,7 @@ input::-ms-clear {
   color: #FFFFFF;
 }
 .oldColection__btn:hover, .newSeason__newColection .newColection__btn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(2, 2, 2, 0.7);
 }
 
 .header {
@@ -504,7 +504,6 @@ input::-ms-clear {
 .oldColection__conteiner {
   display: flex;
   justify-content: space-between;
-  max-height: 600px;
 }
 .oldColection__imgWrapper {
   min-width: 48%;
@@ -514,6 +513,7 @@ input::-ms-clear {
   min-height: 100%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .oldColection__wrapper {
   max-width: 52%;
@@ -536,8 +536,8 @@ input::-ms-clear {
   max-width: 55.76%;
 }
 .oldColection__btn {
-  margin-top: 30px;
-  margin-bottom: 16%;
+  margin-top: 80px;
+  margin-bottom: 6%;
 }
 
 /*--------portenSection-------*/
@@ -623,10 +623,8 @@ input::-ms-clear {
     color: #FFFFFF;
   }
   .newSeason__newColection {
-    min-width: 100%;
-    max-height: 730px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/main/NewColection/Rectangle 8.png") center center/cover no-repeat;
     padding-top: 0px;
-    background: url("../img/main/NewColection/Rectangle 8.png") center center/cover no-repeat;
   }
   .newSeason__newColection .newColection__content {
     display: flex;
@@ -694,6 +692,55 @@ input::-ms-clear {
   .newSeason__newColection .newColection__btn {
     font-size: 8px;
     padding: 3px 7px;
+  }
+}
+/*--------oldColectionSection---*/
+@media (max-width: 375px) {
+  .oldColection {
+    min-height: auto;
+    width: 100%;
+    margin-top: -260px;
+  }
+  .oldColection__conteiner {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+  }
+  .oldColection__imgWrapper {
+    display: none;
+  }
+  .oldColection__img {
+    display: none;
+  }
+  .oldColection__wrapper {
+    max-width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/main/OldColection/Rectangle 9.png") center center/cover no-repeat;
+  }
+  .oldColection__content {
+    margin-top: 3%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .oldColection__title h2 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .oldColection__describe {
+    font-size: 8px;
+    max-width: 90.76%;
+  }
+  .oldColection__describe ~ span {
+    display: none;
+  }
+  .oldColection__btn {
+    margin-top: 10px;
+    margin-bottom: 2%;
+    font-size: 8px;
+    padding: 3px 7px;
+    margin-bottom: 20px;
   }
 }
 .wrapper {

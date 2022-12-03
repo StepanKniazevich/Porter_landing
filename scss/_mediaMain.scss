@@ -103,10 +103,8 @@
             }
         }
         &__newColection {
-            min-width: 100%;
-            max-height: 730px;
+            background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ),url('../img/main/NewColection/Rectangle\ 8.png') center center/cover no-repeat;
             padding-top: 0px;
-            background: url('../img/main/NewColection/Rectangle\ 8.png') center center/cover no-repeat;
             .newColection {
                 &__content {
                     display: flex;
@@ -201,6 +199,66 @@
     
                 }
             }
+        }
+    }
+}
+
+/*--------oldColectionSection---*/
+
+@media (max-width:375px) {
+    .oldColection {
+        min-height: auto;
+        width:100%;
+        margin-top: -260px;///
+        &__conteiner {
+            display: flex;//
+            flex-direction: center;
+            align-items: center;
+            
+        }
+        &__imgWrapper {
+            display:none;
+            
+        }
+        &__img {
+            display:none;
+        }
+        &__wrapper {
+            max-width: 100%;//
+            background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ),url('../img/main/OldColection/Rectangle\ 9.png') center center/cover no-repeat;
+        }
+        &__content {
+            margin-top: 3%;
+            max-width: 100%;//
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:center;//
+            
+        }
+        &__title {
+
+            @extend %underline-title;
+            h2 { 
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }
+        &__describe {
+            font-size: 8px;
+            max-width: 90.76%;///
+            &~span {
+                display:none;
+            }
+        }
+        
+        &__btn {
+            @extend %porter-btn;
+            margin-top: 10px;
+            margin-bottom: 2%;
+            font-size: 8px;
+            padding: 3px 7px;
+            margin-bottom: 20px;
         }
     }
 }

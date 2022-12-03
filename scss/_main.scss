@@ -139,6 +139,7 @@
     }
 }
 /*------OldColectionSection------*/
+
 .oldColection {
     min-height: 600px;
     width:100%;
@@ -146,7 +147,6 @@
     &__conteiner {
         display: flex;
         justify-content: space-between;
-        max-height: 600px;
         
     }
     &__imgWrapper {
@@ -158,6 +158,7 @@
         min-height:100%;
         width: 100%;
         height:100%;
+        object-fit: cover;
 
     }
     &__wrapper {
@@ -185,8 +186,8 @@
         max-width: 55.76%;
     }
     &__btn {
-        margin-top: 30px;
-        margin-bottom: 16%;
+        margin-top: 80px;
+        margin-bottom: 6%;
         @extend %porter-btn;
     }
 }
