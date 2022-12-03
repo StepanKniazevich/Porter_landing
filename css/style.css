@@ -65,13 +65,13 @@ input::-ms-clear {
   display: none;
 }
 
-.newClocks__title, .oldColection__title, .newSeason__newColection .newColection__title, .newSeason__season22 .season22__title {
+.articles__title, .newClocks__title, .oldColection__title, .newSeason__newColection .newColection__title, .newSeason__season22 .season22__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.newClocks__title h2, .oldColection__title h2, .newSeason__newColection .newColection__title h2, .newSeason__season22 .season22__title h2 {
+.articles__title h2, .newClocks__title h2, .oldColection__title h2, .newSeason__newColection .newColection__title h2, .newSeason__season22 .season22__title h2 {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
@@ -81,13 +81,13 @@ input::-ms-clear {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.newClocks__title div, .oldColection__title div, .newSeason__newColection .newColection__title div, .newSeason__season22 .season22__title div {
+.articles__title div, .newClocks__title div, .oldColection__title div, .newSeason__newColection .newColection__title div, .newSeason__season22 .season22__title div {
   border-bottom: 1px solid #FFFFFF;
   width: 120px;
   margin-bottom: 30px;
 }
 
-.newClocks__clockItem .clockItem__btn, .oldColection__btn, .newSeason__newColection .newColection__btn {
+.articles__btn, .newClocks__clockItem .clockItem__btn, .oldColection__btn, .newSeason__newColection .newColection__btn {
   transition: all 0.5s ease-out;
   background: transparent;
   padding: 12px 28px;
@@ -99,7 +99,7 @@ input::-ms-clear {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
 }
-.newClocks__clockItem .clockItem__btn:hover, .oldColection__btn:hover, .newSeason__newColection .newColection__btn:hover {
+.articles__btn:hover, .newClocks__clockItem .clockItem__btn:hover, .oldColection__btn:hover, .newSeason__newColection .newColection__btn:hover {
   background-color: rgba(2, 2, 2, 0.7);
   filter: blur(0px);
 }
@@ -586,6 +586,78 @@ input::-ms-clear {
 }
 .newClocks__clockItem .clockItem__btn:active ~ img {
   filter: blur(0px);
+}
+
+/*------ArticlesSection-----------*/
+.articles {
+  background: #0F0F0F;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+.articles__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.articles__title {
+  margin: 4.2% 0px 3% 0px;
+}
+.articles__img {
+  max-width: 51%;
+  max-height: 437px;
+  object-fit: cover;
+}
+.articles__clocksItems {
+  display: flex;
+  flex-direction: column;
+}
+.articles__contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4% 5% 0% 7%;
+}
+.articles__contentWrapper h3 {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.articles__contentWrapper p {
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.articles__itemWrapper {
+  display: flex;
+  min-height: 437px;
+  position: relative;
+}
+.articles__itemWrapper:not(:first-child) {
+  margin-bottom: 2%;
+}
+.articles__btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.articles__btnWrapper span {
+  position: absolute;
+  top: -15;
+  right: 8%;
+}
+.articles__teg {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /*--------portenSection-------*/

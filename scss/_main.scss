@@ -175,8 +175,6 @@
     background: #000000;
     padding-top:10.9%;
     min-height: 1100px;
-    &__container {
-    }
     &__title {
         @extend %underline-title; 
         margin-bottom: 7.2%;
@@ -208,7 +206,6 @@
                             
             }
             &__btn {
-                
                 @extend %porter-btn;
                 position:absolute;
                 top:30%;
@@ -228,3 +225,97 @@
 
         }
     }
+/*------ArticlesSection-----------*/
+
+.articles {
+    //min-height: 1582px;
+    background: #0F0F0F;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    &__title {
+        @extend %underline-title; 
+        margin: 4.2% 0px 3% 0px;
+    }
+    &__img {
+        max-width: 51%;
+        max-height: 437px;
+        object-fit: cover;
+    }
+    
+    &__clocksItems {
+        display: flex;
+        flex-direction: column; 
+
+    }
+    &__contentWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4% 5% 0% 7%;
+        h3 {
+            margin-bottom: 14px;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $white;
+        }
+        p {
+            margin-bottom: 35px;
+            font-size: 14px;
+            line-height: 150%;
+            color: $white;
+        }
+    }
+    &__itemWrapper {
+        display: flex;
+        min-height: 437px;
+        position: relative;
+        &:not(:first-child) {
+            margin-bottom: 2%;
+        }
+
+    }
+    &__btnWrapper {
+        display: flex;
+        justify-content:flex-end;
+        align-items: flex-end;
+        span {
+            position:absolute;
+            top: -15;
+            right: 8%;
+            
+        }
+    }
+    &__btn {
+        @extend %porter-btn;
+    }
+    
+    &__teg {
+        font-size: 18px;
+        line-height: 23px;
+        text-align: right;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+}
+.articles__container {
+}
+
+.articles__clocksWrapper {
+}
+
+.articles__clockitem {
+}
+
+
+
