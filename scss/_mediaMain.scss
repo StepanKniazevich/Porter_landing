@@ -137,7 +137,6 @@
 
 @media (max-width:375px) {
     .newSeason {
-
         &__container {
             display: flex;
             flex-direction: column;
@@ -161,7 +160,6 @@
                     }
                 }
                 &__sliderWrapper {
-                  
                     .slider { 
                         &__clocksItem {  
                             .clocksItem  {
@@ -173,18 +171,7 @@
                                     color: $white;  
                                 }
                                 &__imgWrapper {
-                                    padding: 20% 10% 15% 10%;
                                     min-width: 40px;
-                                    background-color: rgb(34, 34, 34);
-                                    img {
-                                        max-width:41px;
-                                        max-height:52px;
-                                        cursor: pointer;
-                                        opacity: 0.6;
-                                        &:hover {
-                                            opacity: 1;
-                                        } 
-                                    }
                                 }
                             }
                         }
@@ -198,16 +185,7 @@
             justify-content:center;
             min-width: 100%;
             padding-bottom: 20px;
-            background: url('../img/main/NewColection/Rectangle\ 8.png') center center/cover no-repeat;
             .newColection {
-                &__content {
-                    display: flex;
-                    flex-direction: column; 
-                    align-items: center;
-                    justify-content:center;
-                    min-height: 100%;
-                    max-width:46.25%;        
-                }
                 &__title {
                    h2 {
                         font-size: 12px;

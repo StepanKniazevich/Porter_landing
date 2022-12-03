@@ -65,13 +65,13 @@ input::-ms-clear {
   display: none;
 }
 
-.newSeason__newColection .newColection__title, .newSeason__season22 .season22__title {
+.oldColection__title, .newSeason__newColection .newColection__title, .newSeason__season22 .season22__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.newSeason__newColection .newColection__title h2, .newSeason__season22 .season22__title h2 {
+.oldColection__title h2, .newSeason__newColection .newColection__title h2, .newSeason__season22 .season22__title h2 {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
@@ -81,13 +81,13 @@ input::-ms-clear {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.newSeason__newColection .newColection__title div, .newSeason__season22 .season22__title div {
+.oldColection__title div, .newSeason__newColection .newColection__title div, .newSeason__season22 .season22__title div {
   border-bottom: 1px solid #FFFFFF;
   width: 120px;
   margin-bottom: 30px;
 }
 
-.newSeason__newColection .newColection__btn {
+.oldColection__btn, .newSeason__newColection .newColection__btn {
   transition: all 0.5s ease-out;
   background: transparent;
   padding: 12px 28px;
@@ -99,7 +99,7 @@ input::-ms-clear {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
 }
-.newSeason__newColection .newColection__btn:hover {
+.oldColection__btn:hover, .newSeason__newColection .newColection__btn:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -429,7 +429,7 @@ input::-ms-clear {
 
 /*--------newSeasonSection-------*/
 .newSeason {
-  min-height: 730px;
+  min-height: 530px;
   font-family: "Playfair Display";
 }
 .newSeason__container {
@@ -456,6 +456,7 @@ input::-ms-clear {
   min-width: 42%;
   max-width: 60%;
   background-color: rgb(34, 34, 34);
+  cursor: grab;
 }
 .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper img {
   max-width: 92%;
@@ -484,7 +485,6 @@ input::-ms-clear {
 }
 .newSeason__newColection {
   min-width: 100%;
-  max-height: 730px;
   padding-top: 22%;
   background: url("../img/main/NewColection/Rectangle 8.png") center center/cover no-repeat;
 }
@@ -493,8 +493,53 @@ input::-ms-clear {
   flex-direction: column;
   align-items: center;
   min-height: 100%;
-  max-width: 46.25%;
+  max-width: 46%;
 }
+/*------OldColectionSection------*/
+.oldColection {
+  min-height: 600px;
+  width: 100%;
+  background: #000000;
+}
+.oldColection__conteiner {
+  display: flex;
+  justify-content: space-between;
+  max-height: 600px;
+}
+.oldColection__imgWrapper {
+  min-width: 48%;
+}
+.oldColection__img {
+  display: inline-block;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.oldColection__wrapper {
+  max-width: 52%;
+}
+.oldColection__content {
+  margin-top: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+.oldColection__describe {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 55.76%;
+}
+.oldColection__btn {
+  margin-top: 30px;
+  margin-bottom: 16%;
+}
+
 /*--------portenSection-------*/
 @media (max-width: 675px) {
   .portenTitle__title p {
@@ -630,18 +675,7 @@ input::-ms-clear {
     color: #FFFFFF;
   }
   .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper {
-    padding: 20% 10% 15% 10%;
     min-width: 40px;
-    background-color: rgb(34, 34, 34);
-  }
-  .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper img {
-    max-width: 41px;
-    max-height: 52px;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-  .newSeason__season22 .season22__sliderWrapper .slider__clocksItem .clocksItem__imgWrapper img:hover {
-    opacity: 1;
   }
   .newSeason__newColection {
     display: flex;
@@ -649,15 +683,6 @@ input::-ms-clear {
     justify-content: center;
     min-width: 100%;
     padding-bottom: 20px;
-    background: url("../img/main/NewColection/Rectangle 8.png") center center/cover no-repeat;
-  }
-  .newSeason__newColection .newColection__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    max-width: 46.25%;
   }
   .newSeason__newColection .newColection__title h2 {
     font-size: 12px;
