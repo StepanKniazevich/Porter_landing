@@ -324,7 +324,6 @@
                             filter: blur(0px);
                         }
                         display: none;
-                        
                     }
                     padding: 1px 4px;
                     font-size: 5px;
@@ -455,7 +454,31 @@
         }
     
     }
-    
-    
+}
 
+/*--------partnersSection--------*/
+@media (max-width: 768px) {
+    .partners {
+        background: #0F0F0F;
+        &__title {
+            margin-bottom: 0;
+            padding: 0;
+            h2 {
+                padding: 0;
+                margin-bottom:0;
+                font-size: 12px;
+            }
+        }
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+    
+        }
+        &__imgContainer {
+            max-width: 80px;
+        }
+    
+    }
 }

@@ -6,9 +6,13 @@
 @import "_mediaHeader.scss";
 @import "_main.scss";
 @import "_mediaMain.scss";
+@import "_footer.scss";
+@import "_mediaFooter.scss";
 
 
-
+body, head {
+    width: 100%;
+}
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -16,8 +20,11 @@
     flex-direction: column;
 }
 ._container {
-    max-width: 1110px;
+    max-width: $_container-width;
     box-sizing: content-box;
     margin: 0px auto;
     padding: 0 30px; 
+}
+.main {
+    flex: 1 1 auto;
 }

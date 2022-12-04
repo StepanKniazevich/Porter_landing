@@ -308,3 +308,27 @@
 
 }
 
+/*-----partnersSection--------*/
+
+.partners {
+    background: #0F0F0F;
+    padding: 0px 8% 0px 8%;
+    &__title {
+        padding-top: 4%;
+        margin-bottom: 3%;
+        @extend %underline-title; 
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 11%;
+
+    }
+    &__imgContainer {
+        max-width: 60%;
+        img {
+            width: 100%;
+        }
+    }
+
+}
