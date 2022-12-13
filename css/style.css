@@ -494,6 +494,7 @@ input::-ms-clear {
 .newSeason {
   min-height: 180px;
   font-family: "Playfair Display";
+  background-color: rgb(0, 0, 0);
 }
 .newSeason__container {
   display: flex;
@@ -819,6 +820,7 @@ input::-ms-clear {
   .newSeason__container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   .newSeason__season22 {
     max-width: 100%;
@@ -861,11 +863,6 @@ input::-ms-clear {
   .newSeason__newColection .newColection__btn {
     font-size: 8px;
     padding: 3px 7px;
-  }
-}
-@media (max-width: 400px) {
-  .newSeason {
-    min-height: 460px;
   }
 }
 /*--------oldColectionSection---*/

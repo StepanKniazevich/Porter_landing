@@ -134,10 +134,12 @@
 
 @media (max-width:430px) {
     .newSeason {
+        
         min-height: 560px;
         &__container {
             display: flex;
             flex-direction: column;
+            justify-content:space-between;
         }
         &__season22 {
             max-width: 100%;
@@ -202,11 +204,7 @@
         }
     }
 }
-@media (max-width:400px) {
-    .newSeason {
-        min-height: 460px;
-    }
-}
+
 
 /*--------oldColectionSection---*/
 
