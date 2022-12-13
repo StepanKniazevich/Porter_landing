@@ -23,7 +23,7 @@
         
 }
 
-@media (max-width:410px) { 
+@media (max-width:430px) { 
     .portenTitle {
         min-height: 0px;
         max-height: 500px;
@@ -132,7 +132,7 @@
     }
 }
 
-@media (max-width:410px) {
+@media (max-width:430px) {
     .newSeason {
         min-height: 560px;
         &__container {
@@ -202,10 +202,15 @@
         }
     }
 }
+@media (max-width:400px) {
+    .newSeason {
+        min-height: 460px;
+    }
+}
 
 /*--------oldColectionSection---*/
 
-@media (max-width:410px) {
+@media (max-width:430px) {
     .oldColection {
         min-height: auto;
         width:100%;
@@ -265,7 +270,7 @@
 
 /*--------newClocks---------*/
 
-@media (max-width:410px) {
+@media (max-width:430px) {
     .newClocks {
         min-height: 200px;
         background: #000000;
@@ -353,7 +358,7 @@
         }
     }
 }
-@media (max-width:410px) {
+@media (max-width:430px) {
     .articles {
         background: #0F0F0F;
         font-family: 'PT Sans';
