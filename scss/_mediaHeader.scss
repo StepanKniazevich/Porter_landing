@@ -109,28 +109,28 @@
         padding: 0px;
         margin: 0px;
         &__popup {
-            top:10px;   
+            top:30px;   
         }
         .hamb__wrapper {
-            transform: scale(0.4);
+            transform: scale(0.6);
          }
         &__popup {
-            font-size: 16px;
+            font-size: 10px;
         }
         .menu { 
             position: relative;
             &__container {
                 position:absolute;
-                top: -22px;
+                top: -9px;
                 left: 0;
-                max-height:32px;
+                max-height:42px;
                 padding: 0px;
                 margin: 0px;
                 background-color: rgb(10, 10, 10);
                 width: 100%;
             }
             &__link {
-                font-size: 6px;
+                font-size: 10px;
                 padding: 10px; 
                 &:last-child {
                     padding: 10px;
@@ -141,12 +141,12 @@
                  margin-right: 0px;
                 }
                 img {
-                    transform: scale(0.4);
+                    transform: scale(0.6);
                 }
             }
              .logo {
                 &__header {
-                     @include logo(8px)
+                     @include logo(12px)
                 }
              }
 
