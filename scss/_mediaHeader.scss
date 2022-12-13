@@ -103,7 +103,7 @@
         }
     }
 }
-@media (max-width:375px) {
+@media (max-width:410px) {
     .header {
         transition: all 0.3s ease;
         padding: 0px;
@@ -115,7 +115,7 @@
             transform: scale(0.4);
          }
         &__popup {
-            font-size: 12px;
+            font-size: 16px;
         }
         .menu { 
             position: relative;

@@ -389,7 +389,7 @@ input::-ms-clear {
     padding: 18px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .header {
     transition: all 0.3s ease;
     padding: 0px;
@@ -402,7 +402,7 @@ input::-ms-clear {
     transform: scale(0.4);
   }
   .header__popup {
-    font-size: 12px;
+    font-size: 16px;
   }
   .header .menu {
     position: relative;
@@ -728,7 +728,7 @@ input::-ms-clear {
     color: #FFFFFF;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .portenTitle {
     min-height: 0px;
     max-height: 500px;
@@ -812,9 +812,9 @@ input::-ms-clear {
     padding: 6px 14px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .newSeason {
-    min-height: 530px;
+    min-height: 560px;
   }
   .newSeason__container {
     display: flex;
@@ -864,7 +864,7 @@ input::-ms-clear {
   }
 }
 /*--------oldColectionSection---*/
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .oldColection {
     min-height: auto;
     width: 100%;
@@ -913,7 +913,7 @@ input::-ms-clear {
   }
 }
 /*--------newClocks---------*/
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .newClocks {
     min-height: 200px;
     background: #000000;
@@ -985,7 +985,7 @@ input::-ms-clear {
     display: none;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .articles {
     background: #0F0F0F;
     font-family: "PT Sans";
@@ -1377,7 +1377,7 @@ input::-ms-clear {
     font-size: 4px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .footer {
     min-height: 50px;
     padding-top: 20px;
@@ -1386,7 +1386,6 @@ input::-ms-clear {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .footer__aboutCompany .aboutCompany__describe {
     font-weight: 400;
@@ -1458,7 +1457,6 @@ input::-ms-clear {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .footer__mailing .mailing__title {
     font-size: 10px;

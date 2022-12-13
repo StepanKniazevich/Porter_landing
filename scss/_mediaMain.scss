@@ -23,7 +23,7 @@
         
 }
 
-@media (max-width:375px) { 
+@media (max-width:410px) { 
     .portenTitle {
         min-height: 0px;
         max-height: 500px;
@@ -132,9 +132,9 @@
     }
 }
 
-@media (max-width:375px) {
+@media (max-width:410px) {
     .newSeason {
-        min-height: 530px;
+        min-height: 560px;
         &__container {
             display: flex;
             flex-direction: column;
@@ -205,7 +205,7 @@
 
 /*--------oldColectionSection---*/
 
-@media (max-width:375px) {
+@media (max-width:410px) {
     .oldColection {
         min-height: auto;
         width:100%;
@@ -265,7 +265,7 @@
 
 /*--------newClocks---------*/
 
-@media (max-width:375px) {
+@media (max-width:410px) {
     .newClocks {
         min-height: 200px;
         background: #000000;
@@ -353,7 +353,7 @@
         }
     }
 }
-@media (max-width:375px) {
+@media (max-width:410px) {
     .articles {
         background: #0F0F0F;
         font-family: 'PT Sans';
