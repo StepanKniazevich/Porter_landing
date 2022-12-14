@@ -289,7 +289,7 @@ input::-ms-clear {
 @media (max-width: 900px) {
   .header {
     position: fixed;
-    z-index: 10;
+    z-index: 30;
     max-height: 50px;
     width: 100%;
   }
@@ -389,7 +389,7 @@ input::-ms-clear {
     padding: 18px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   .header {
     transition: all 0.3s ease;
     padding: 0px;
@@ -599,12 +599,13 @@ input::-ms-clear {
   padding: 20% 10% 15% 10%;
   min-width: 82%;
   max-width: 100%;
+  max-height: 200px;
 }
 .newClocks__clockItem .clockItem__btn {
   position: absolute;
   top: 30%;
   right: 7.5%;
-  z-index: 20;
+  z-index: 10;
   filter: blur(0px);
 }
 .newClocks__clockItem .clockItem__btn:active {
@@ -729,7 +730,7 @@ input::-ms-clear {
     color: #FFFFFF;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   .portenTitle {
     min-height: 0px;
     max-height: 500px;
@@ -813,7 +814,7 @@ input::-ms-clear {
     padding: 6px 14px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   .newSeason {
     min-height: 560px;
   }
@@ -866,7 +867,7 @@ input::-ms-clear {
   }
 }
 /*--------oldColectionSection---*/
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   .oldColection {
     min-height: auto;
     width: 100%;
@@ -915,7 +916,7 @@ input::-ms-clear {
   }
 }
 /*--------newClocks---------*/
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   .newClocks {
     min-height: 200px;
     background: #000000;
@@ -942,17 +943,14 @@ input::-ms-clear {
     margin-bottom: 5px;
     position: relative;
   }
-  .newClocks__clockItem:last-child img {
-    filter: blur(3px);
-  }
   .newClocks__clockItem .clockItem__imgWrapper {
     padding: 20% 22% 15% 10%;
     min-width: 82%;
     max-width: 100%;
+    max-height: 75px;
   }
   .newClocks__clockItem .clockItem__imgWrapper img {
     max-width: 50px;
-    max-height: 80px;
   }
   .newClocks__clockItem .clockItem__content {
     margin-top: 0px;
@@ -987,7 +985,7 @@ input::-ms-clear {
     display: none;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   .articles {
     background: #0F0F0F;
     font-family: "PT Sans";
@@ -1103,7 +1101,7 @@ input::-ms-clear {
     align-items: baseline;
   }
   .partners__imgContainer {
-    max-width: 80px;
+    max-width: 70px;
   }
 }
 .footer {
@@ -1379,7 +1377,7 @@ input::-ms-clear {
     font-size: 4px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   .footer {
     min-height: 50px;
     padding-top: 20px;

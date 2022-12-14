@@ -1,8 +1,6 @@
 export const accordion = () => {
     let acc = document.getElementsByClassName("category__accordion");
     let i;
-    console.log("accordion");
-
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
             this
